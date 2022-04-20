@@ -1,0 +1,24 @@
+{
+  "name": "dvarelaccpcr/php-sapb1",
+  "type": "library",
+  "description": "SAP Business One Library for PHP, forked from blockshiftnetwork/php-sapb1",
+  "keywords": ["sap"],
+  "homepage": "https://github.com/dvarelaccpcr/php-sapb1",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Diego Varela",
+      "email": "dvarela@loudcampus.pro",
+      "homepage": "https://cloudcampuspro.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SAPb1\\": "SAPb1"
+    }
+  }
+}
