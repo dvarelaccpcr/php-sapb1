@@ -1,5 +1,5 @@
 {
-  "name": "dvarelaccpcr/php-sapb1",
+  "name": "dvarelaccpcr/SAPb1",
   "type": "library",
   "description": "SAP Business One Library for PHP, forked from blockshiftnetwork/php-sapb1",
   "keywords": ["sap"],
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "SAPb1\\": "SAPb1"
+      "SAPb1\\": "src"
     }
   }
 }
