@@ -95,8 +95,6 @@ class Request
             "ssl" => $this->sslOptions
         );
 
-        var_dump($options);
-
         // Set the error handler to change warnings to exceptions.
         set_error_handler(
             function ($severity, $message, $file, $line) {
