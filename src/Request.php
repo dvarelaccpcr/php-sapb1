@@ -92,7 +92,7 @@ class Request
                 'content' => $postdata,
                 'header' => $header,
             ),
-            "ssl" => $this->sslOptions
+            //"ssl" => $this->sslOptions
         );
 
         // Set the error handler to change warnings to exceptions.
