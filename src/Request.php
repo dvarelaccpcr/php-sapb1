@@ -95,7 +95,7 @@ class Request
             "ssl" => $this->sslOptions
         );
 
-        // Set the error handler to change warnings to exceptions.
+        // Set the error handler to change warnings to exceptions .
         set_error_handler(
             function ($severity, $message, $file, $line) {
                 throw new \ErrorException($message, $severity, $severity, $file, $line);
