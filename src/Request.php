@@ -96,11 +96,11 @@ class Request
         );
 
         // Set the error handler to change warnings to exceptions.
-        set_error_handler(
+        /*set_error_handler(
             function ($severity, $message, $file, $line) {
                 throw new \ErrorException($message, $severity, $severity, $file, $line);
             }
-        );
+        );*/
 
         // Call the rest API.
         $body = file_get_contents($this->url, false, stream_context_create($options));
@@ -109,7 +109,7 @@ class Request
         $response = $this->createResponse($body, $http_response_header);
 
         // Restore the error handler.
-        restore_error_handler();
+        //restore_error_handler();
 
         return $response;
     }
