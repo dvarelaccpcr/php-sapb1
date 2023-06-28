@@ -41,7 +41,7 @@ class Service
             return $response->getJson();
         }
 
-        if ($response->getStatusCode() === 204) {
+        if ($response->getStatusCode() == 204) {
             return true;
         }
 
@@ -70,7 +70,7 @@ class Service
             return $response->getJson();
         }
 
-        if ($response->getStatusCode() === 204) {
+        if ($response->getStatusCode() == 204) {
             return true;
         }
 
@@ -95,7 +95,7 @@ class Service
             return $response;
         }
 
-        if ($response->getStatusCode() === 204) {
+        if ($response->getStatusCode() == 204) {
             return true;
         }
 
@@ -120,7 +120,7 @@ class Service
             return $response;
         }
 
-        if ($response->getStatusCode() === 204) {
+        if ($response->getStatusCode() == 204) {
             return true;
         }
 

@@ -161,7 +161,7 @@ class Query
         $response = $request->getResponse();
 
         // Check if the response code is successful.
-        if ($response->getStatusCode() === 200) {
+        if ($response->getStatusCode() == 200) {
 
             // If the Content Type is plain text, then return the plain response body.
             if ($response->getHeaders('Content-Type') == 'text/plain') {

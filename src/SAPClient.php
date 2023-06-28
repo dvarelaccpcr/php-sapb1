@@ -60,7 +60,7 @@ class SAPClient
         $request->setPost(['UserName' => $username, 'Password' => $password, 'CompanyDB' => $company]);
         $response = $request->getResponse();
 
-        if ($response->getStatusCode() === 200) {
+        if ($response->getStatusCode() == 200) {
             return new SAPClient($config->toArray(), $response->getCookies());
         }
 
